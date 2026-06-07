@@ -59,12 +59,21 @@ export const Header = () => {
   return CreateElement('header', {
     className: 'header',
     children: [
-      Logo(),
-      Navbar(navigations),
-      RoundBtn(),
-      btnCta({
-        name : 'contact us',
-        href : '#contact'
+      CreateElement('div', {
+        className: 'header-content',
+        children: [
+          Logo(),
+          Navbar(navigations),
+          CreateElement('div', {
+            children:[
+              RoundBtn(),
+              btnCta({
+                name : 'contact us',
+                href : '#contact'
+              })
+            ]
+          })
+        ]
       })
     ]
   });
