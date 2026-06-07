@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary:#FF6B2C;
+
+  --dark:#111111;
+  --gray:#6B7280;
+
+  --border:#E5E7EB;
+
+  --background:#F8F8F8;
+
+  --radius-sm:12px;
+  --radius-md:20px;
+  --radius-lg:32px;
+
+  --container:1200px;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -12,7 +29,7 @@
 }
 
 .header {
-  background-color: #333;
+  background-color: var(--dark);
   color: #fff;
   padding: 1rem;
 }
@@ -23,7 +40,7 @@
 }
 
 .footer {
-  background-color: #333;
+  background-color: var(--dark);
   color: #fff;
   padding: 1rem;
 } 
