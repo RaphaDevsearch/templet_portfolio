@@ -57,6 +57,7 @@ export const Header = () => {
   ];
 
   return CreateElement('header', {
+    className: 'header',
     children: [
       Logo(),
       Navbar(navigations),

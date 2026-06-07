@@ -4,6 +4,7 @@ import {
 
 export const Main = () => {
   return CreateElement('main', {
+    className: 'main',
     children: [
       CreateElement('h1', {
         textContent: 'Welcome to My App'
