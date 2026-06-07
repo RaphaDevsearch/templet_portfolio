@@ -44,7 +44,10 @@ body{
 .header {
   background-color: var(--dark);
   color: #fff;
-  padding: 0.5rem 4rem ;
+  padding: 0.5rem 4rem;
+
+  position: sticky;
+  top: 0;
 }
 
 .header .header-content {
@@ -67,11 +70,11 @@ body{
 
 .main {
   flex: 1;
-  padding: 2rem;
+  padding: 0.5rem 4rem ;
 }
 
 .footer {
   background-color: var(--dark);
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem 4rem ;
 }
