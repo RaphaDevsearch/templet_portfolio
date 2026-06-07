@@ -2,6 +2,31 @@ import {
   CreateElement
 } from './Utils/CreateElement.js';
 import {Navbar} from './Navbar.js';
+
+const Logo = () => {
+  return CreateElement('h1', {
+    textContent: 'Joy Full',
+    className: 'logo'
+  });
+}
+
+const btnCta = ({name, href}) => {
+  return CreateElement('a', {
+    textContent: name || 'Get Started',
+    className: 'btn-cta',
+    othersAttributes: {
+      href: href || '#get-started'
+    }
+  });
+}
+
+const RoundBtn = () => {
+  return CreateElement('button', {
+    textContent: 'Click Me',
+    className: 'round-btn'
+  });
+}
+
 export const Header = () => {
 
   const navigations = [
@@ -33,7 +58,13 @@ export const Header = () => {
 
   return CreateElement('header', {
     children: [
-      Navbar(navigations)
+      Logo(),
+      Navbar(navigations),
+      RoundBtn(),
+      btnCta({
+        name : 'contact us',
+        href : '#contact'
+      })
     ]
   });
 };
