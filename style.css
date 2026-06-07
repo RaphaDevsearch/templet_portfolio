@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+button{
+  cursor: pointer;
+  border: none;
+  /* background: none; */
+}
 :root{
   --primary:#FF6B2C;
 
@@ -69,4 +74,4 @@ body{
   background-color: var(--dark);
   color: #fff;
   padding: 1rem;
-} 
+}
