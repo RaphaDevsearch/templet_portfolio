@@ -1,20 +1,7 @@
 import {CreateElement} from './Utils/CreateElement.js';
-export const Navbar = () => {
+export const Navbar = (navigations) => {
 
-  const navigations = [
-    { 
-      name: 'Home', 
-      href: '#' 
-    },
-    { 
-      name: 'About', 
-      href: '#' 
-    },
-    { 
-      name: 'Contact', 
-      href: '#' 
-    }
-  ];
+  
 
   return CreateElement('nav', {
     children: navigations.map(nav => 
