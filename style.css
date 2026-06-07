@@ -22,10 +22,18 @@
   --container:1200px;
 }
 
+:root{
+  --font-primary:"Roboto", sans-serif;
+  --font-accent:"Playwrite AU VIC Guides", cursive;
+}
+
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body{
+  font-family:var(--font-primary);
 }
 
 .header {
@@ -46,6 +54,10 @@
   color: white;
   text-decoration: none;
   margin-left: 1rem;
+}
+
+.logo{
+  font-family:var(--font-accent);
 }
 
 .main {
