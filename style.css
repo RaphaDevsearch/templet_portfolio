@@ -24,7 +24,7 @@ button{
   --radius-md:20px;
   --radius-lg:32px;
 
-  --container:1200px;
+  --container:100%;
 }
 
 :root{
@@ -40,11 +40,16 @@ button{
 body{
   font-family:var(--font-primary);
 }
-
+.container{
+  width: var(--container);
+  margin: 0 auto;
+  border: 2px solid red;
+  padding: 0 171px;
+}
 .header {
   background-color: var(--dark);
   color: #fff;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem;
 
   position: sticky;
   top: 0;
@@ -70,7 +75,7 @@ body{
 
 .main {
   flex: 1;
-  padding: 0.5rem 4rem ;
+  /* padding: 0.5rem 4rem ; */
 }
 
 .footer {

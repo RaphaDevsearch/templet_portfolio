@@ -25,3 +25,21 @@ export const CreateElement = (
   }
   return element;
 }
+
+export class Container {
+
+  children = [];
+  
+  constructor(children = []){
+    this.children = children;
+  }
+
+  render(){
+    const container = CreateElement('section', {
+      className: 'container',
+      children: this.children
+    });
+    return container;
+  }
+
+}

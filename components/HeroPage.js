@@ -1,7 +1,7 @@
 import {CreateElement} from './Utils/CreateElement.js';
 
 export const HeroPage = () => {
-  return CreateElement('section', {
+  return CreateElement('div', {
     className: 'hero',
     children: [
       CreateElement('h1', {
