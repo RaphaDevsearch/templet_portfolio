@@ -3,16 +3,21 @@ import {
 } from './Utils/CreateElement.js';
 import{ HeroPage } from './HeroPage.js';
 import { Service } from './Service.js';
+import { Work } from './Work.js';
+import { About } from './About.js';
+import { Reviews } from './Reviews.js';
+import { Blog } from './Blog.js';
+import { Contact } from './Contact.js';
 export const Main = () => {
 
   const children = {
     heropage : HeroPage(),
     service : Service(),
-    work    : CreateElement('h1', {textContent: 'Our Work'}),
-    about   : CreateElement('h1', {textContent: 'About Us'}),
-    review  : CreateElement('h1', {textContent: 'Customer Reviews'}),
-    blog    : CreateElement('h1', {textContent: 'Our Blog'}),
-    contact : CreateElement('h1', {textContent: 'Contact Us'}),
+    work    : Work(),
+    about   : About(),
+    review  : Reviews(),
+    blog    : Blog(),
+    contact : Contact(),
   }
 
   return CreateElement('main', {

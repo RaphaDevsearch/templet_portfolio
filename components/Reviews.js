@@ -3,16 +3,16 @@ import {
   Container 
 } from './Utils/CreateElement.js';
 
-export const HeroPage = () => {
+export const Reviews = () => {
   return new Container([
     CreateElement('div', {
-      className: 'hero',
+      className: 'reviews',
       children: [
-        CreateElement('h1', {
-          textContent: 'Welcome to My Portfolio'
+        CreateElement('h2', {
+          textContent: 'Customer Reviews'
         }),
         CreateElement('p', {
-          textContent: 'I am a passionate developer creating amazing web experiences.'
+          textContent: 'Here are some reviews from my satisfied clients.'
         })
       ]
     })
