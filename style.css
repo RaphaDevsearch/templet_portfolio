@@ -41,9 +41,10 @@ body{
   font-family:var(--font-primary);
 }
 .container{
-  width: var(--container);
+  max-width: var(--container);
+  min-height: 400px;
   margin: 0 auto;
-  border: 2px solid red;
+  border: 0.1px solid red;
   padding: 0 171px;
 }
 .header {
