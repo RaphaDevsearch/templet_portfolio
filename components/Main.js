@@ -1,16 +1,21 @@
 import {
   CreateElement
 } from './Utils/CreateElement.js';
-
+import{ HeroPage } from './HeroPage.js';
 export const Main = () => {
-  let nums = [];
-  for(let i = 1; i <= 100; i++){
-    nums.push(i);
+
+  const children = {
+    heropage : HeroPage(),
+    service : CreateElement('h1', {textContent: 'Our Services'}),
+    work    : CreateElement('h1', {textContent: 'Our Work'}),
+    about   : CreateElement('h1', {textContent: 'About Us'}),
+    review  : CreateElement('h1', {textContent: 'Customer Reviews'}),
+    blog    : CreateElement('h1', {textContent: 'Our Blog'}),
+    contact : CreateElement('h1', {textContent: 'Contact Us'}),
   }
+
   return CreateElement('main', {
     className: 'main',
-    children: nums.map(num => CreateElement('p', {
-        textContent: `This is paragraph number ${num}`
-      }))
+    children: Object.values(children)
   });
 };
